@@ -12,7 +12,7 @@ const Category = ({ data }) => {
             {
                 data ? data.map((d, i) => {
                     return <img onClick={() => navigate(`/netflix/${d.id}`, scrollTo(0, 0))} key={i} src={d.poster_path ? `https://image.tmdb.org/t/p/w500${d.poster_path}` : noimage}
-                        className={`rounded-lg w-52 h-full ${d.poster_path ? 'h-full' : 'h-fit'} hover:scale-105 duration-300 ease-in-out cursor-pointer border-2 border-gray-500`} alt="" />
+                        className={`rounded-lg w-36 md:w-40 lg:w-48 xl:w-56 h-full ${d.poster_path ? 'h-full' : 'h-fit'} hover:scale-105 duration-300 ease-in-out cursor-pointer border-2 border-gray-500`} alt="" />
                 }) : <Loading />
             }
         </div>
