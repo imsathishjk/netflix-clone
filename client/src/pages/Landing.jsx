@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Trending from '../components/Trending';
 import ReasonCards from '../components/ReasonCards';
+import FAQ from '../components/FAQ';
 
 const Landing = () => {
 
@@ -19,9 +20,10 @@ const Landing = () => {
             <div className='bg-gradient-to-t from-black/60 to-black/70 w-screen min-h-screen z-10 absolute top-0'>
                 <Navbar />
                 <Hero />
-                <div className='bg-black'>
+                <div className='bg-black px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32'>
                     <Trending images={images} />
                     <ReasonCards />
+                    <FAQ />
                 </div>
             </div>
             {showLogin && (<Login />)}

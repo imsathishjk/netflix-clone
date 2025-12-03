@@ -5,7 +5,7 @@ const Trending = ({ images }) => {
 
     return (
 
-        <div className='max-w-6xl mx-auto w-full px-4 sm:px-8 md:px-14 lg:px-20 xl:px-24 pt-12'>
+        <div className='max-w-6xl mx-auto w-full pt-12'>
             <h1 className='text-xl lg:text-2xl xl:text-3xl font-bold'>Trending Now</h1>
             <div className='mt-12 flex gap-5 overflow-x-scroll no-scroll'>
                 {

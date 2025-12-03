@@ -18,7 +18,7 @@ const App = () => {
           <Route path='/netflix/:id' element={<MovieDetails />} />
           <Route path='/netflix/category/:categoryId' element={<FilterMovies />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </AppContextProvider>
   )

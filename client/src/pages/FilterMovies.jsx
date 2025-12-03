@@ -55,7 +55,7 @@ const FilterMovies = () => {
         <div className='min-h-screen bg-gradient-to-bl from-red-950 to-black text-white overflow-hidden relative z-0'>
             <Navbar location={location.pathname} categoryId={categoryId} />
 
-            <div className='px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 mt-28'>
+            <div className='px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 mt-8 md:mt-16 lg:mt-20 xl:mt-28'>
                 {categoryName && (<h1 className='font-semibold text-lg md:text-xl text-gray-500'>Results for : <span className='font-semibold bg-clip-text text-transparent bg-gradient-to-l from-red-500 to-red-600'>{categoryName}</span> </h1>)}
 
                 <div className='border-2 mt-5 flex-1 max-w-lg w-full flex items-center  border-red-700 py-2 px-3 rounded-full placeholder:text-gray-500'>
